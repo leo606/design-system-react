@@ -7,6 +7,14 @@ export default {
   args: {
     children: "test",
   },
+  argTypes: {
+    size: {
+      options: ['sm', 'md', 'lg'],
+      control: {
+        type: 'inline-radio'
+      }
+    }
+  }
 } as Meta<TextProps>;
 
 export const Default: StoryObj = {};
@@ -28,4 +36,11 @@ export const CustomElement: StoryObj = {
     asChild: true,
     children: <p>Test</p>,
   },
+  argTypes: {
+    children: {
+      table: {
+        disable: true
+      }
+    }
+  }
 };
