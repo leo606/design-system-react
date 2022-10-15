@@ -1,9 +1,10 @@
 import "./styles/global.css";
+import { Text } from "./components/Text";
 
 export function App() {
   return (
     <>
-      <h1>Hello world</h1>
+      <Text />
       <button className="bg-cyan">button</button>
     </>
   );
