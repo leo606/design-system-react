@@ -5,9 +5,20 @@ export default {
   title: "Components/text",
   component: Text,
   args: {
-    size: "md",
     children: "test",
   },
 } as Meta<TextProps>;
 
 export const Default: StoryObj = {};
+
+export const Small: StoryObj = {
+  args: {
+    size: "sm",
+  },
+};
+
+export const Large: StoryObj = {
+  args: {
+    size: "lg",
+  },
+};
