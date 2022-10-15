@@ -22,3 +22,10 @@ export const Large: StoryObj = {
     size: "lg",
   },
 };
+
+export const CustomElement: StoryObj = {
+  args: {
+    asChild: true,
+    children: <p>Test</p>,
+  },
+};
